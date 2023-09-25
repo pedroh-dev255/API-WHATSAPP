@@ -1,0 +1,19 @@
+{
+  "name": "api-whatsapp",
+  "version": "1.0.0",
+  "description": "Um simples host da api do Whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "qrcode": "^1.5.3",
+    "whatsapp-web.js": "https://github.com/Julzk/whatsapp-web.js/tarball/jkr_hotfix_7"
+  }
+}
