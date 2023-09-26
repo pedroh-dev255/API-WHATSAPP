@@ -1,0 +1,18 @@
+crie um codigo em nodejs que hospede um api whatsapp-web que ao iniciar carregue o qrcode de coneção em uma pagina "localhost/qrcode" e quando o qrcode for autenticado essa rota seja desativada e a  rota "/api/enviar-mensagem" seja ativada, onde caso ela receba um json
+Authorization: Bearer {token}
+Content-Type application/json
+Payload
+{
+    "number": "",
+    "body": ""
+}
+faça a api encaminhar a mensagem no whatsapp, e caso precise que alguma media seja encaminhada ela aceite: 
+Authorization: Bearer {token}
+Content-Type multipart/form-data
+Payload:
+{
+    "number": "",
+    "medias": "files",
+    "body": ""
+}
+tambem use a biblioteca crypto para gerar o token e salve o token gerado em um arquivo .env, e caso o arquivo env não exista ou não tenha um token salvo crie o arquivo e o token.
